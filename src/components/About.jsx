@@ -16,17 +16,7 @@ export default function About() {
           <div className="text-text space-y-5">
             {about.summary.map((paragraph, index) => (
               <p key={index}>
-                {index === 0 && (
-                  <>
-                    Desarrollador Full Stack especializado en <strong className="text-accent-light">.NET Core y Flutter</strong>, {paragraph}
-                  </>
-                )}
-                {index === 1 && (
-                  <>
-                    Experiencia en <strong className="text-accent-light">Clean Architecture, Onion Architecture, CQRS, Entity Framework, SQL Server, Firebase</strong>, {paragraph}
-                  </>
-                )}
-                {index === 2 && paragraph}
+                <span dangerouslySetInnerHTML={{ __html: paragraph }} />
               </p>
             ))}
           </div>

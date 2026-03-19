@@ -17,13 +17,13 @@ export default function Education() {
           {education.map((edu, index) => (
             <article 
               key={index} 
-              className="bg-bg-secondary border border-border rounded-2xl p-8 flex gap-6 hover:border-accent hover:translate-x-1 transition-all duration-300"
+              className="flex flex-col md:flex-row bg-bg-secondary border border-border rounded-2xl p-8  gap-6 hover:border-accent hover:translate-x-1 transition-all duration-300"
             >
               <div className="w-14 h-14 flex items-center justify-center bg-bg-tertiary border border-border rounded-xl text-accent shrink-0">
                 <GraduationCap size={28} />
               </div>
               
-              <div className="grow">
+              <div className="">
                 <h3 className="text-text-heading font-semibold text-lg mb-1">{edu.degree}</h3>
                 <span className="text-accent text-sm block mb-3">{edu.school}</span>
                 

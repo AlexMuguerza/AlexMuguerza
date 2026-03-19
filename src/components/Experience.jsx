@@ -23,7 +23,7 @@ export default function Experience() {
                   <h3 className="text-text-heading text-lg font-semibold mb-1">{job.role}</h3>
                   <span className="text-accent text-sm">{job.company}</span>
                 </div>
-                <div className="text-right">
+                <div className="md:text-right">
                   <span className="font-mono text-xs text-text block">{job.period}</span>
                   <span className="text-xs text-text">{job.location}</span>
                 </div>
